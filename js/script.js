@@ -49,3 +49,15 @@ if (computerMove === playerMove) {
 } else {
     printMessage('Przegrales, a komputer wygrywa!');
 }
+
+if(playerInput == '1') {
+  playerMove = 'kamień';
+} else if (playerInput == '2') {
+    playerMove = 'papier';
+} else if (playerInput == '3') {
+    playerMove = 'nożyce';
+} else {
+    printMessage('Brawo umiesz liczyc do 4 ale w grze sa 3 mozliwosci wyboru!')
+}
+
+printMessage('Twój ruch to: ' + playerMove);
