@@ -35,10 +35,10 @@ function displayResult(argComputerMove, argPlayerMove) {
 function playGame(playerInput) {
     clearMessages();
 
-    let randomNumber = Math.floor(Math.random() * 3 + 1);
+    const randomNumber = Math.floor(Math.random() * 3 + 1);
     console.log('Wylosowana liczba to:', randomNumber);
 
-    let computerMove = getMoveName(randomNumber);
+    const computerMove = getMoveName(randomNumber);
     printMessage('Ruch komputera to: ' + computerMove);
 
     /*
@@ -46,7 +46,7 @@ function playGame(playerInput) {
     console.log('Gracz wpisał:', playerInput);
     */
 
-    let playerMove = getMoveName(parseInt(playerInput));
+    const playerMove = getMoveName(parseInt(playerInput));
     if (playerMove === 'nieznany ruch') {
         printMessage('Brawo, znasz więcej cyfr niż 3, ale w grze są tylko 3 możliwości wyboru!');
     } else {
